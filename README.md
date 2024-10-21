@@ -1,7 +1,6 @@
 # ResNet-9 implementation using Pytorch, Numpy, and CuPy, respectively.
 This is an experiment homework implementing **ResNet-9** ([He et al. 2015](https://arxiv.org/pdf/1512.03385)) training on **MNIST** dataset, using **Numpy**, **CuPy** and **Pytorch**, respectively.
-  * The PyTorch implementation uses the PyTorch framework to train the model easily.
-  * The NumPy implementation manually handles parameter initialization for each layer, forward propagation, backpropagation, cross-entropy loss, and gradient calculation, along with a simplified dataloader and Adam optimizer. 
+  * The NumPy implementation **manually handles parameter initialization for each layer, forward propagation, backpropagation, cross-entropy loss, and gradient calculation, along with a simplified dataloader and Adam optimizer**. 
   * The CuPy implementation modifies the NumPy version to run on the GPU.
 
 ### This is a great project for beginners to get started with deep learning!
@@ -40,7 +39,7 @@ python train.py
 
 ### Results
 
-<img src="https://github.com/jiaxin-ai/ResNet9/blob/main/pics/compare_loss_curves.png" width="750px">
+<img src="https://github.com/jiaxin-ai/ResNet9/blob/main/pics/compare_loss_curves.png" width="600px">
 
 
 ## Inference with the pretrained models
@@ -70,6 +69,14 @@ python test.py
 |    |  CuPy  |  98.80  |  61.24  |  98.96  |
 |    |  Pytorch  |  98.97  |  4.36  |  99.04  |
 
+<div>
+ <img src="https://github.com/jiaxin-ai/ResNet9/blob/main/pics/compare_training_time.png" width="500px">
+ <img src="https://github.com/jiaxin-ai/ResNet9/blob/main/pics/compare_cpu_usage.png" width="500px">
+</div>
+<div>
+ <img src="https://github.com/jiaxin-ai/ResNet9/blob/main/pics/compare_gpu_usage.png" width="500px">
+ <img src="https://github.com/jiaxin-ai/ResNet9/blob/main/pics/compare_gpu_utilization.png" width="500px">
+</div>
 
 ## Acknowledgements
 * [cifar10-resnet](https://github.com/matthias-wright/cifar10-resnet)
